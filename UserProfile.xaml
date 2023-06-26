@@ -1,0 +1,26 @@
+﻿<Window x:Class="RandomUserGenerator.UserProfile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="UserProfile" Height="600" Width="600">
+    <Grid Margin="0,0,-8,-21">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FF9B9BD8" Offset="1"/>
+                <GradientStop Color="#FF4D4D6B" Offset="1"/>
+                <GradientStop Color="#FF4F80E8" Offset="0.404"/>
+                <GradientStop Color="#FF4F80E8" Offset="0.306"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="UserNameLB" Content="" HorizontalAlignment="Left" Margin="82,94,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Image x:Name="ImageB"  HorizontalAlignment="Left" Height="135" Margin="335,72,0,0" VerticalAlignment="Top" Width="156" >
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="200" UriSource=""/>
+            </Image.Source>
+        </Image>
+        <Label x:Name="UserMailLB" Content="" HorizontalAlignment="Left" Margin="82,228,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="BG" Content="" HorizontalAlignment="Left" Margin="421,228,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="PhLB" Content="" HorizontalAlignment="Left" Margin="82,322,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="LocLB" Content="" HorizontalAlignment="Left" Margin="82,369,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+    </Grid>
+</Window>
